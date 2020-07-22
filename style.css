@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+}
+
+#weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 50vw;
+    max-width: 450px;
+    margin: auto;
+    padding: 10px;
+    padding-left: 20px;
+    border: solid 1px black;
+}
