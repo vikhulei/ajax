@@ -89,12 +89,12 @@ var temp4 = json.consolidated_weather[3].the_temp;
 document.querySelector('#weather #b4').innerHTML = temp4.toFixed();
 document.querySelector('#weather #im4').src = 'https://www.metaweather.com/static/img/weather/png/64/' + json.consolidated_weather[3].weather_state_abbr +'.png';
 
-var temp5 = json.consolidated_weather[4].the_temp;
+/*var temp5 = json.consolidated_weather[4].the_temp;
 document.querySelector('#weather #b5').innerHTML = temp5.toFixed();
-document.querySelector('#weather #im5').src = 'https://www.metaweather.com/static/img/weather/png/64/' + json.consolidated_weather[4].weather_state_abbr +'.png';
+document.querySelector('#weather #im5').src = 'https://www.metaweather.com/static/img/weather/png/64/' + json.consolidated_weather[4].weather_state_abbr +'.png'; */
 
-}) .catch(function() {
-    alert('If it does not show the results, please try to relode the page');
+}) .catch(function(error) {
+    alert(error);
 })
 
 e.preventDefault();
